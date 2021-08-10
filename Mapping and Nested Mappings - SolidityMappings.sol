@@ -1,3 +1,9 @@
+a) Create a mapping which maps from uint to bool. Write set get and remove
+functions for the mapping. Set the mapping such that 1 maps to true and 2 to false
+
+b) Create a nested mapping which maps from address to another mapping(maps
+from uint to bytes).
+
 pragma solidity ^0.7.6;
 contract Mapping {
     mapping(uint => bool) public MySolidityMappings;
