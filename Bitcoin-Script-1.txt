@@ -1,0 +1,14 @@
+Bitcoin script to perform the following steps:
+1. Insert the following numbers to stack: 3, 5, 1, 6, 2
+2. Find maximum of the above numbers
+3. Insert the following numbers to stack: 12, 15, 8, 5
+4. Find minimum of the above numbers.
+5. If the numbers found in step 2 is greater than number in step 4. Insert 1 onto stack
+otherwise insert 2.
+
+//Code
+
+03 05 op_max 01 op_max 06 op_max 02 op_max
+12 15 op_min 08 op_min 05 op_min
+op_greaterthan
+op_if 01 op_else 02 op_endif
